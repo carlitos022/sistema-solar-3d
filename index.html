@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#02040a" />
+  <title>Sistema Solar 3D</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <main id="app">
+    <canvas id="space"></canvas>
+    <header class="topbar">
+      <div><strong>SISTEMA SOLAR 3D</strong><span id="mode">Sistema Solar</span></div>
+      <div class="actions">
+        <button id="home">Vista general</button>
+        <button id="back" disabled>← Sistema Solar</button>
+        <button id="enter" disabled>🌍 Entrar a la Tierra</button>
+        <button id="pause">⏸ Pausar</button>
+      </div>
+    </header>
+    <section id="info" class="panel">
+      <strong>Explorador planetario</strong>
+      <p id="hint">Haz clic sobre la Tierra.</p>
+      <div id="earth-data" hidden>
+        <h2>🌍 Tierra</h2>
+        <p>Tercer planeta del Sistema Solar</p>
+        <dl><dt>Distancia media</dt><dd>1 UA</dd><dt>Radio</dt><dd>6.371 km</dd><dt>Día</dt><dd>≈ 23 h 56 min</dd><dt>Año</dt><dd>≈ 365,25 días</dd><dt>Satélite natural</dt><dd>Luna</dd></dl>
+      </div>
+    </section>
+    <div id="status">Inicializando motor 3D…</div>
+  </main>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
